@@ -3,12 +3,11 @@
 }
 body {
   width: 100vw;
-  /* background-color: rgb(214, 71, 0); */
 }
 /* первый экран */
 .first_scrin {
   width: 100vw;
-  height: 62.2vw;
+  height: 62vw;
   background-image: url("../images/firstscreen.svg");
   background-repeat: no-repeat;
   background-size: 300vw 62.2vw;
@@ -16,6 +15,9 @@ body {
   animation: smena 0.6s steps(1) infinite;
 }
 /* рыбкиии */
+.second_scrin {
+  background-color: #d64700;
+}
 .upper_fish {
   width: 100vw;
   height: 7.5vw;
@@ -23,13 +25,13 @@ body {
   overflow: hidden;
 }
 .fish1 {
-  width: 90.2vw;
-  height: 5.5vw;
+  width: 90vw;
+  height: 6vw;
   animation: fish1 10s infinite linear;
 }
 .bottom_fish {
   width: 100vw;
-  height: 7.5vw;
+  height: 8vw;
   background-color: #d64700;
   overflow: hidden;
 }
@@ -40,6 +42,7 @@ body {
 }
 /* люди разговаривают */
 .talking {
+  margin-bottom: -0.5vw;
   width: 100vw;
   height: 27vw;
   background-color: #d64700;
@@ -82,6 +85,7 @@ body {
 /* три блока */
 .troyka {
   display: flex;
+  background-color: #4346fd;
 }
 /* 1 */
 .notes {
@@ -101,42 +105,52 @@ body {
   background-repeat: no-repeat;
   background-size: 38.5vw 70.4vw;
 }
+.notes {
+  position: relative;
+}
 .notes img {
   width: 16vw;
   height: 11vw;
-}
-.notes img:nth-child(1) {
-  animation: fall 3s ease-in-out infinite;
-}
-.notes img:nth-child(2) {
-  animation: fall 2s linear infinite;
-}
-.notes img:nth-child(3) {
-  transform: rotate(-15deg);
-  animation: fall 3s ease-in-out infinite;
-}
-.notes img:nth-child(4) {
-  width: 6.5vw;
-  height: 4vw;
-  animation: fall 2s linear infinite;
-}
-.notes img:nth-child(5) {
   position: absolute;
+}
+.notes img:nth-of-type(1) {
+  animation: fall 4s ease-in-out infinite;
+}
+.notes img:nth-of-type(2) {
+  left: 12vw;
   animation: fall 3s linear infinite;
 }
-.notes img:nth-child(6) {
-  position: absolute;
-  animation: fall 2s linear infinite;
+.notes img:nth-of-type(3) {
+  left: 17vw;
+  animation: fall 4s ease-in-out infinite;
 }
-.notes img:nth-child(7) {
-  position: absolute;
+.notes img:nth-of-type(4) {
+  width: 7vw;
+  height: 4vw;
+  left: 25vw;
+  animation: fall 5s linear infinite;
+}
+.notes img:nth-of-type(5) {
+  left: 3vw;
+  transform: rotate(30deg);
+  animation: fall 4s linear infinite;
+}
+.notes img:nth-of-type(6) {
+  left: 15vw;
+  transform: rotate(30deg);
   animation: fall 3s linear infinite;
 }
-.notes img:nth-child(8) {
-  position: absolute;
-  width: 6.5vw;
+.notes img:nth-of-type(7) {
+  left: 19vw;
+  transform: rotate(30deg);
+  animation: fall 5s linear infinite;
+}
+.notes img:nth-of-type(8) {
+  width: 7vw;
   height: 4vw;
-  animation: fall 2s ease-in-out infinite;
+  left: 28vw;
+  transform: rotate(30deg);
+  animation: fall 3s ease-in-out infinite;
 }
 /* 2 */
 .octopus {
@@ -164,6 +178,7 @@ body {
   animation: waving1 3s infinite linear;
 }
 .ticket2 {
+  top: 5vw;
   width: 30vw;
   height: 30.4vw;
   animation: waving2 3s infinite linear;
@@ -176,11 +191,12 @@ body {
   background-repeat: no-repeat;
   background-size: 600vw 57.5vw;
   overflow: hidden;
-  animation: barabany 2.5s steps(1) infinite;
+  animation: barabany 1.8s steps(1) infinite;
 }
 /* вторая строка перебивка */
 .stroke {
   display: flex;
+  background-color: #211e1e;
 }
 .wavyvinyl {
   width: 41.25vw;
@@ -197,68 +213,73 @@ body {
   height: 32.8vw;
   background-color: #211e1e;
   overflow: hidden;
+  position: relative;
 }
-.bukvy_dop {
-  width: 58.75vw;
-  height: 32.8vw;
-  background-size: 58.75vw 32.8vw;
+.slova img {
+  width: 26.2vw;
+  height: 7.8vw;
   position: absolute;
 }
-.slova img:nth-child(1) {
-  width: 26.2vw;
-  height: 7.8vw;
+.slova img:nth-of-type(1) {
+  transform: rotate(-79deg);
+  animation: fall2 4s ease-in-out infinite;
+}
+.slova img:nth-of-type(2) {
   transform: rotate(15deg);
-  animation: fall2 3s ease-in-out infinite;
-}
-.slova img:nth-child(2) {
-  width: 26.2vw;
-  height: 7.8vw;
-  transform: rotate(15deg);
-  animation: fall2 2s linear infinite;
-}
-.slova img:nth-child(3) {
-  width: 26.2vw;
-  height: 7.8vw;
-  animation: fall2 3s ease-in-out infinite;
-  transform: rotate(-25deg);
-}
-.slova img:nth-child(4) {
-  width: 26.2vw;
-  height: 7.8vw;
-  transform: rotate(25deg);
-  animation: fall2 2s linear infinite;
-}
-.slova img:nth-child(5) {
-  width: 26.2vw;
-  height: 7.8vw;
-  transform: rotate(30deg);
+  left: 9vw;
   animation: fall2 3s linear infinite;
 }
-.slova img:nth-child(6) {
-  width: 26.2vw;
-  height: 7.8vw;
-  transform: rotate(-30deg);
-  animation: fall2 2s linear infinite;
+.slova img:nth-of-type(3) {
+  left: 17vw;
+  animation: fall2 4s ease-in-out infinite;
+}
+.slova img:nth-of-type(4) {
+  transform: rotate(27deg);
+  left: 24vw;
+  animation: fall2 3s linear infinite;
+}
+.slova img:nth-of-type(5) {
+  left: 34vw;
+  transform: rotate(30deg);
+  animation: fall2 4s linear infinite;
+}
+.slova img:nth-of-type(6) {
+  left: 48vw;
+  transform: rotate(-48deg);
+  animation: fall2 3s linear infinite;
 }
 /* вооооолны */
 .waves {
   width: 100vw;
   height: 56vw;
+  position: relative;
   background: linear-gradient(#4346fd, #ffff);
 }
-.wave img:nth-child(1) {
+.waves img:nth-of-type(1) {
   width: 100vw;
-  height: 43.2vw;
-  background-size: 100vw 43.2vw;
+  height: 53vw;
+  background-size: 100vw 53vw;
+  position: absolute;
+  animation: wave1 3s linear infinite;
 }
+.waves img:nth-of-type(2) {
+  width: 100vw;
+  height: 53vw;
+  background-size: 100vw 53vw;
+  margin-top: 10vw;
+  position: absolute;
+  animation: wave2 3s linear infinite;
+}
+
+/* подвал */
 .podval {
   width: 100vw;
-  height: 5vw;
+  height: 15vw;
   background-color: #ffff;
-  display: flex;
 }
 .podval img {
   display: inline-block;
+  margin-top: 5vw;
   margin-left: 2vw;
   width: 19vw;
   height: 8.64vw;
@@ -267,10 +288,8 @@ body {
   display: inline-block;
   font-family: "FuturaDemi";
   text-wrap: nowrap;
-  position: absolute;
-  font-size: 3vw;
-  width: 19vw;
-  height: 8.64vw;
-  margin-top: 2.3vw;
-  margin-left: 62vw;
+  font-size: 3.3vw;
+  margin-top: 7vw;
+  margin-right: 3vw;
+  float: right;
 }
