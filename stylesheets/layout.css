@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  /* background-color: rgb(214, 71, 0); */
+}
+/* первый экран */
+.first_scrin {
+  width: 100vw;
+  height: 62.2vw;
+  background-image: url("../images/firstscreen.svg");
+  background-repeat: no-repeat;
+  background-size: 300vw 62.2vw;
+  overflow: hidden;
+  animation: smena 0.6s steps(1) infinite;
+}
+/* рыбкиии */
+.upper_fish {
+  width: 100vw;
+  height: 7.5vw;
+  background-color: #d64700;
+  overflow: hidden;
+}
+.fish1 {
+  width: 90.2vw;
+  height: 5.5vw;
+  animation: fish1 10s infinite linear;
+}
+.bottom_fish {
+  width: 100vw;
+  height: 7.5vw;
+  background-color: #d64700;
+  overflow: hidden;
+}
+.fish2 {
+  width: 64vw;
+  height: 5.2vw;
+  animation: fish2 10s infinite linear;
+}
+/* люди разговаривают */
+.talking {
+  width: 100vw;
+  height: 27vw;
+  background-color: #d64700;
+  background-image: url("../images/PEOPLE1.svg");
+  background-size: 200vw 27vw;
+  background-repeat: no-repeat;
+  animation: talking 1s steps(1) infinite;
+  overflow: hidden;
+}
+/* бегущая строка */
+.runningstroke {
+  width: 100vw;
+  height: 19vw;
+  background-color: #211e1e;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.runningtext1 {
+  margin-top: -7vw;
+  margin-left: -37vw;
+  white-space: nowrap;
+  flex-direction: row;
+  animation: text1 10s infinite linear;
+  font-size: 7.5vw;
+  font-family: Drabina;
+  color: white;
+}
+.runningtext2 {
+  margin-top: 8vw;
+  margin-left: -38vw;
+  white-space: nowrap;
+  flex-direction: row-reverse;
+  animation: text2 10s infinite linear;
+  font-family: Drabina;
+  font-size: 7.5vw;
+  color: white;
+}
+/* три блока */
+.troyka {
+  display: flex;
+}
+/* 1 */
+.notes {
+  display: inline-flex;
+  width: 38.5vw;
+  height: 70.4vw;
+  background: white;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: 38.5vw 70.4vw;
+}
+.setka {
+  width: 38.5vw;
+  height: 70.4vw;
+  background-image: url("../images/setka.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: 38.5vw 70.4vw;
+}
+.notes img {
+  width: 16vw;
+  height: 11vw;
+}
+.notes img:nth-child(1) {
+  animation: fall 3s ease-in-out infinite;
+}
+.notes img:nth-child(2) {
+  animation: fall 2s linear infinite;
+}
+.notes img:nth-child(3) {
+  transform: rotate(-15deg);
+  animation: fall 3s ease-in-out infinite;
+}
+.notes img:nth-child(4) {
+  width: 6.5vw;
+  height: 4vw;
+  animation: fall 2s linear infinite;
+}
+.notes img:nth-child(5) {
+  position: absolute;
+  animation: fall 3s linear infinite;
+}
+.notes img:nth-child(6) {
+  position: absolute;
+  animation: fall 2s linear infinite;
+}
+.notes img:nth-child(7) {
+  position: absolute;
+  animation: fall 3s linear infinite;
+}
+.notes img:nth-child(8) {
+  position: absolute;
+  width: 6.5vw;
+  height: 4vw;
+  animation: fall 2s ease-in-out infinite;
+}
+/* 2 */
+.octopus {
+  background-image: url("../images/octopus.svg");
+  width: 61.6vw;
+  height: 40vw;
+  display: inline-flex;
+  background-size: 61.6vw 40vw;
+}
+.vinyl1 {
+  width: 19.8vw;
+  height: 19.8vw;
+  animation: tudasuda 3s infinite linear;
+}
+/* 3 */
+.tickets {
+  width: 61.6vw;
+  height: 30.4vw;
+  background-color: black;
+  overflow: hidden;
+}
+.ticket1 {
+  width: 30vw;
+  height: 30.4vw;
+  animation: waving1 3s infinite linear;
+}
+.ticket2 {
+  width: 30vw;
+  height: 30.4vw;
+  animation: waving2 3s infinite linear;
+}
+/* РЫБААА МОЯ ЛЮБИМАЯ РЫБА ФУГУ */
+.fugu {
+  width: 100vw;
+  height: 57.5vw;
+  background-image: url("../images/rybasuper.svg");
+  background-repeat: no-repeat;
+  background-size: 600vw 57.5vw;
+  overflow: hidden;
+  animation: barabany 2.5s steps(1) infinite;
+}
+/* вторая строка перебивка */
+.stroke {
+  display: flex;
+}
+.wavyvinyl {
+  width: 41.25vw;
+  height: 32.8vw;
+  background-color: #211e1e;
+  background-image: url("../images/wavy_vinyl.svg");
+  background-repeat: no-repeat;
+  background-size: 82.5vw 32.8vw;
+  overflow: hidden;
+  animation: spinning 0.8s steps(1) infinite;
+}
+.slova {
+  width: 58.75vw;
+  height: 32.8vw;
+  background-color: #211e1e;
+  overflow: hidden;
+}
+.bukvy_dop {
+  width: 58.75vw;
+  height: 32.8vw;
+  background-size: 58.75vw 32.8vw;
+  position: absolute;
+}
+.slova img:nth-child(1) {
+  width: 26.2vw;
+  height: 7.8vw;
+  transform: rotate(15deg);
+  animation: fall2 3s ease-in-out infinite;
+}
+.slova img:nth-child(2) {
+  width: 26.2vw;
+  height: 7.8vw;
+  transform: rotate(15deg);
+  animation: fall2 2s linear infinite;
+}
+.slova img:nth-child(3) {
+  width: 26.2vw;
+  height: 7.8vw;
+  animation: fall2 3s ease-in-out infinite;
+  transform: rotate(-25deg);
+}
+.slova img:nth-child(4) {
+  width: 26.2vw;
+  height: 7.8vw;
+  transform: rotate(25deg);
+  animation: fall2 2s linear infinite;
+}
+.slova img:nth-child(5) {
+  width: 26.2vw;
+  height: 7.8vw;
+  transform: rotate(30deg);
+  animation: fall2 3s linear infinite;
+}
+.slova img:nth-child(6) {
+  width: 26.2vw;
+  height: 7.8vw;
+  transform: rotate(-30deg);
+  animation: fall2 2s linear infinite;
+}
+/* вооооолны */
+.waves {
+  width: 100vw;
+  height: 56vw;
+  background: linear-gradient(#4346fd, #ffff);
+}
+.wave img:nth-child(1) {
+  width: 100vw;
+  height: 43.2vw;
+  background-size: 100vw 43.2vw;
+}
+.podval {
+  width: 100vw;
+  height: 5vw;
+  background-color: #ffff;
+  display: flex;
+}
+.podval img {
+  display: inline-block;
+  margin-left: 2vw;
+  width: 19vw;
+  height: 8.64vw;
+}
+.podval p {
+  display: inline-block;
+  font-family: "FuturaDemi";
+  text-wrap: nowrap;
+  position: absolute;
+  font-size: 3vw;
+  width: 19vw;
+  height: 8.64vw;
+  margin-top: 2.3vw;
+  margin-left: 62vw;
+}

@@ -4,3 +4,9 @@
   font-weight: 500;
   font-style: normal;
 }
+@font-face {
+  font-family: "FuturaDemi";
+  src: url("../fonts/FuturaDemiC.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}

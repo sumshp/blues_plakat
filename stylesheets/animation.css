@@ -1,18 +1,201 @@
-.sprite1 {
-  width: 1280px;
-  height: 796px;
-  position: relative;
-  background-image: url("../images/firstscreen.svg");
-  animation: smena 0.5s steps(1) infinite;
-}
 @keyframes smena {
-  30% {
-    background-position: -1280px 0;
+  20% {
+    background-position: 0 0;
+  }
+  40% {
+    background-position: -100vw 0;
   }
   60% {
-    background-position: -2560px 0;
+    background-position: -200vw 0;
   }
-  90% {
-    background-position: -3840px 0;
+}
+@keyframes fish1 {
+  0% {
+    transform: translate(120vw, 1vw);
+  }
+  10% {
+    transform: translate(90.32vw, 2vw);
+  }
+  20% {
+    transform: translate(70.64vw, 1vw);
+  }
+  30% {
+    transform: translate(50.96vw, 2vw);
+  }
+  40% {
+    transform: translate(30.28vw, 1vw);
+  }
+  50% {
+    transform: translate(10vw, 2vw);
+  }
+  60% {
+    transform: translate(-20vw, 1vw);
+  }
+  70% {
+    transform: translate(-50vw, 2vw);
+  }
+  80% {
+    transform: translate(-80vw, 1vw);
+  }
+  100% {
+    transform: translate(-110vw, 1.2vw);
+  }
+}
+@keyframes fish2 {
+  0% {
+    transform: translate(-70vw, 1vw);
+  }
+  10% {
+    transform: translate(-40vw, 2vw);
+  }
+  20% {
+    transform: translate(-10vw, 1vw);
+  }
+  30% {
+    transform: translate(20vw, 2vw);
+  }
+  40% {
+    transform: translate(50vw, 1vw);
+  }
+  50% {
+    transform: translate(80vw, 2vw);
+  }
+  60% {
+    transform: translate(110vw, 1vw);
+  }
+  70% {
+    transform: translate(140vw, 2vw);
+  }
+  80% {
+    transform: translate(170vw, 1vw);
+  }
+  100% {
+    transform: translate(200vw, 2vw);
+  }
+}
+
+@keyframes talking {
+  0% {
+    background-position: 0vw 0;
+  }
+  50% {
+    background-position: -100vw 0;
+  }
+}
+@keyframes text1 {
+  0% {
+    transform: translate(50%, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
+@keyframes text2 {
+  0% {
+    transform: translate(-180%, 0);
+  }
+
+  100% {
+    transform: translate(50%, 0);
+  }
+}
+.runningtext1:hover,
+.runningtext2:hover {
+  color: #d64700;
+}
+@keyframes fall {
+  0% {
+    transform: translate(10vw, -10vw);
+  }
+  100% {
+    transform: translate(0vw, 30vw);
+  }
+}
+@keyframes tudasuda {
+  0% {
+    transform: translate(32vw, 4vw);
+  }
+  25% {
+    transform: translate(27vw, 7vw);
+  }
+  50% {
+    transform: translate(17vw, 3vw);
+  }
+  75% {
+    transform: translate(27vw, 7vw);
+  }
+  100% {
+    transform: translate(32vw, 4vw);
+  }
+}
+.vinyl1:hover {
+  animation-play-state: paused;
+}
+@keyframes waving1 {
+  0% {
+    transform: rotate(-20deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+@keyframes waving2 {
+  0% {
+    margin-top: 2vw;
+    transform: rotate(30deg);
+  }
+
+  50% {
+    margin-top: 2vw;
+    transform: rotate(5deg);
+  }
+
+  100% {
+    margin-top: 2vw;
+    transform: rotate(30deg);
+  }
+}
+@keyframes barabany {
+  0% {
+    background-position: 0 0;
+  }
+  20% {
+    background-position: -100vw 0;
+  }
+  40% {
+    background-position: -200vw 0;
+  }
+  60% {
+    background-position: -300vw 0;
+  }
+  80% {
+    background-position: -400vw 0;
+  }
+  100% {
+    background-position: -500vw 0;
+  }
+}
+@keyframes spinning {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: -41.25vw 0;
+  }
+}
+.wavyvinyl:hover {
+  animation-play-state: paused;
+}
+@keyframes fall2 {
+  0% {
+    transform: translate(10vw, -10vw);
+  }
+  100% {
+    transform: translate(0vw, 30vw);
   }
 }
