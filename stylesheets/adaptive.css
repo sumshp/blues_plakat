@@ -1,0 +1,12 @@
+/* @media screen and (max-width: 768px) {
+  .troyka {
+    flex-direction: column;
+  }
+}
+.setka {
+  width: 100vw;
+  opacity: 0;
+}
+.setka_adaptive {
+  opacity: 100;
+} */
